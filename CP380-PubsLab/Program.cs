@@ -13,7 +13,8 @@ namespace CP380_PubsLab
                     Console.WriteLine("Yes, I can connect");
                 }
 
-                // 1:Many practice
+                var employees = dbcontext.Employee.ToList();
+                var jobs = dbcontext.Jobs.ToList();
                 //
                 // TODO: - Loop through each employee
                 //       - For each employee, list their job description (job_desc, in the jobs table)
@@ -29,7 +30,7 @@ namespace CP380_PubsLab
                 //
                 // e.g.
                 //  Bookbeat -> The Gourmet Microwave, The Busy Executive's Database Guide, Cooking with Computers: Surreptitious Balance Sheets, But Is It User Friendly?
-                
+
                 // TODO: - Loop through each Title
                 //       - For each title, list all the stores it was sold at
                 //
